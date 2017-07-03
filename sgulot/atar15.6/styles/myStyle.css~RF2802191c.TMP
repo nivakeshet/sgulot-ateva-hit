@@ -1,0 +1,269 @@
+/*רקע אתר*/
+body {
+    direction: rtl;
+    background: #f9f9ef url('../imeges/aliim1.png') no-repeat top fixed;
+    background-size: 100%;
+}
+
+/*כל התוכן בקונטיינר*/
+#contaner {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*לוגו*/
+#logo {
+    height:220px;
+    width: 550px;
+    margin: auto;
+}
+
+#logoimg {
+    background: url(../imeges/logo.png) no-repeat center;
+    height: 200px;
+    background-size: 550px;
+}
+
+#logoimg h1 {
+    padding: 13px 15px 0px 0px;
+    color: #825BB4;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Heebo', sans-serif;
+    transition: all 0.7s;
+    }
+
+#logo a:hover{
+    text-decoration: none;
+}
+
+#logo:hover h1 {
+    color:#9360b4;
+    text-shadow: 1px 1px 1px #537A14;
+}
+
+
+
+#logoimg p {
+    padding: 10px 15px 0px 0px;
+    text-align: center;
+    color:#537A14;
+    font-family: 'Heebo', sans-serif;
+    line-height:20px;
+    font-size:16px;
+}
+
+.logoHref{
+   text-decoration: none;
+}
+
+/*תפריט ניווט ראשי */
+
+nav {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  display:inline-block; 
+}
+
+#tabs ul {
+    list-style: none;
+}
+
+#tabs ul li {
+    display: inline-block;
+    float: right;
+}
+
+#tabs ul li a {
+    display: block;
+    background-color: #AEBF3C;
+    color: #404040;
+    text-decoration: none;
+    text-align: center;
+    width: 240px;
+    height: 47px;
+    Padding-top: 13px;
+    font-size:20px;
+    font-family: 'Heebo', sans-serif;
+    transition: 0.4s ease;
+
+   -webkit-box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+ /*במעבר עכבר על התפריט*/
+#tabs li a:hover{
+    background-color:#e2dd54;
+    font-size:22px;
+    padding-top:12px;
+}
+ /*עמוד שנבחר בתפריט*/
+ #tabs ul li a.selected {
+    background-color: #e2dd54;
+    text-decoration: underline;
+    font-size:23px;
+    padding-top:12px;
+}
+/*תפריט כאבים*/
+#tabs ul li ul {
+    display: none;
+    position: absolute;
+    box-shadow: 3px 6px 10px 2px rgba(81, 81, 81, 0.33);
+}
+#tabs ul li:hover ul {
+    display: block;
+    width: 240px;
+}
+#tabs ul li:hover ul li a {
+    background-color: #AEBF3C;
+}
+#tabs ul li:hover ul li a:hover {
+    background-color: #e2dd54;
+}
+
+/*הגדרות לתפריט צמחים שנפתח
+*/
+#tabs ul li#chema ul {
+     width: 720px;
+     background-color: #AEBF3C;
+     box-shadow: 3px 6px 10px 2px rgba(81, 81, 81, 0.33);
+}
+#tabs ul li#chema ul li {
+     display: inline;
+}
+
+
+/*הגדרות לקרוסלה - דף בית*/
+
+#carousel-example-generic {
+    position:absolute;
+    z-index: -1;
+    height: 500px;
+    background-color: rgba(255, 246, 198, 0.80);
+    margin-top: 30px;
+}
+
+
+.item h2{
+    color: #825BB4;
+    font-size:43px;
+    padding: 0px 0px 33px 0px;
+    font-family: 'Heebo', sans-serif;
+    text-align:right;
+    width:960px;
+}
+.item p{
+    color:  #404040;
+    font-size:20px;
+    font-family: 'Heebo', sans-serif;
+    text-align:right;
+    line-height: 52px; 
+    padding: 0px 0px 60px 0px;
+}
+
+.meidaNosaf{
+    background-color: rgba(189, 151, 236, 0.65);
+    border-radius:7px;
+    padding:5px 15px 5px 15px;
+    color:#404040;
+    font-size:22px;
+    font-family: 'Heebo', sans-serif;
+}
+.meidaNosaf:hover{
+    color:#404040;
+}
+
+
+
+
+
+/*דף בית - סגולות הצמחים*/
+
+#sgulot{
+    position:absolute;
+    display:inline-block;
+    background: url(../imeges/homeSgulot.png) no-repeat;
+    height:340px;
+    width:960px;
+    padding:100px 30px 0px 40px;
+    margin-top:550px;
+}
+#sgulot h2{
+    color: #825BB4;
+    font-size:35px;
+    padding: 30px 180px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    font-weight:bold;
+}
+#sgulot p{
+    color: #404040;
+    font-size:20px;
+    line-height:50px;
+    padding: 10px 180px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+#sgulot:hover{
+    text-decoration:none;
+}
+
+
+
+/*פוטר*/
+footer{
+    background-color:#AEBF3C;
+    width:960px;
+    height:60px;
+    bottom:0px;
+    margin-top:30px;
+}
+
+footer li, footer ul{
+    list-style: none;
+    display:inline-block;
+    padding:12px 150px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    font-size:18px;
+}
+#footer1 ul{
+    padding-right:220px;
+    margin-bottom: 0;
+    clear:both;
+}
+#footer1 p {
+    display:inline-block;
+    position:absolute;
+    padding:24px 10px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    color: #404040;
+    font-size:18px;
+}
+#footer1 a{
+    color: #404040;
+}
+#footer1 a:hover{
+    color:#404040;
+}
+
+
+
+
+/*עיצוב זמני לטופס צור קשר- צריך לשנות*/
+form {
+    margin-right: 610px;
+    margin-top: 5px;
+    margin-left: 70px;
+    background-color: cornflowerblue;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    float: right;
+}
+
+
+/*הערות נוספות- כרגע פוטר בעמוד הבית עולה על הקרוסלה, צריך לשחק עם הפוזישן*/
+
+
+

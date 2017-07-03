@@ -1,0 +1,172 @@
+/*רקע אתר*/
+body {
+    direction: rtl;
+    background: #f9f9ef url('../imeges/aliim1.png') no-repeat top fixed;
+    background-size: 100%;
+}
+
+/*כל התוכן בקונטיינר*/
+#contaner {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*לוגו*/
+#logo {
+    height: 170px;
+    width: 400px;
+    margin: auto;
+}
+
+#logoimg {
+    background: url(../imeges/logo.png) no-repeat center;
+    height: 180px;
+    background-size: 400px;
+}
+
+    #logoimg h1 {
+    padding: 13px 15px 0px 0px;
+    color: #825BB4;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+#logo :hover {
+    text-decoration: none;
+}
+
+#logoimg p {
+    padding: 10px 15px 0px 0px;
+    text-align: center;
+}
+
+.logoHref{
+   text-decoration: none;
+}
+
+article {
+    margin-top: 280px;
+}
+
+
+/*תפריט ניווט ראשי */
+
+#tabs ul {
+    list-style: none;
+   /*הגדרת רוחב ומרכוז התפריט לאמצע*/
+    width: 960px;
+    margin: 0 auto;
+}
+
+#tabs ul li {
+    display: inline-block;
+    float: right;
+}
+
+#tabs ul li a {
+    display: block;
+    background-color: #AEBF3C;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 239px;
+    height: 41px;
+    Padding-top: 11px;
+
+   -webkit-box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+ /*במעבר עכבר על התפריט*/
+#tabs ul li:hover a {
+    background-color: green;
+}
+
+
+ /*עמוד שנבחר בתפריט*/
+ #tabs ul li a.selected {
+    background-color: green;
+}
+
+/*בלחיצה על משהו בתפריט*/
+#tabs ul li a:active {
+    background-color: #32cd32;
+}
+
+
+
+#tabs ul li ul {
+    display: none;
+    position: absolute;
+    box-shadow: 3px 6px 10px 2px #016413;
+}
+
+#tabs ul li:hover ul {
+    display: block;
+    width: 239px;
+}
+
+#tabs ul li:hover ul li a {
+    background-color: #AEBF3C;
+}
+
+#tabs ul li:hover ul li a:hover {
+    background-color: green;
+}
+
+
+            /*הגדרות לתפריט צמחים שנפתח
+    לשנות את הצבע
+*/
+#tabs ul li#chema ul {
+     width: 718px;
+     background-color: #AEBF3C;
+     box-shadow: 3px 6px 10px 2px #016413;
+}
+
+#tabs ul li#chema ul:hover {
+     width: 720px;
+}
+
+#tabs ul li#chema ul li {
+     display: inline;
+}
+
+.separator {
+    width: 945px;
+    margin-top: 43px;
+    box-shadow: 3px -1px 7px 2px #AEBF3c;
+
+}
+
+/*הגדרות לקרוסלה*/
+.carousel {
+    /*צריך לבדוק אם להשאיר אבסולוט או רלטיוו או למחוק את הפוזישן*/
+    position: absolute;
+    z-index: -1;
+    top: 270px;
+    height: 300px;
+    background-color: rgba(255, 246, 198, 0.80);
+}
+
+
+/*עיצוב זמני לטופס צור קשר- צריך לשנות*/
+form {
+    margin-right: 610px;
+    margin-top: 5px;
+    margin-left: 70px;
+    background-color: cornflowerblue;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    float: right;
+}
+
+
+/*הערות נוספות- כרגע פוטר בעמוד הבית עולה על הקרוסלה, צריך לשחק עם הפוזישן*/
+
+
+

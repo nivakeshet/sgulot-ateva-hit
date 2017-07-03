@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>סגולות הטבע - מפת אתר</title>
+    <meta name="description" content="מפת אתר סגולות הטבע" />
+    <meta name="keywords" content="מפת אתר, סגולות הטבע, אתר פרוייקט גמר" />
+    <meta name="author" content="Omer Carmi,Niva Keshet,Shir Mizrahi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet"> 
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+
+<!-- קישור למפת אתר יהיה בפוטר ככל העמודים למטה -->
+<body onload="tab_nav()">
+
+    <div id="contaner">
+
+        <header id="headerlogo">
+
+            
+            <!--  תמונה של הלוגו שמובילה לעמוד הבית -->
+            <div id="logo">
+                <a class="logoHref" href="index.html" alt="לוגו אתר מוביל לעמוד הבית">
+                    <section id="logoimg">
+                        <p class="h-logo">סגולות הטבע</p>
+                        <p class="p-logo">המדריך <br />לצמחי מרפא</p>
+                    </section>
+                </a>
+            </div>
+            <p id="p-header"> פתרון יעיל, טבעי ובריא לבעיות רפואיות שונות ושמירה על אורח חיים בריא</p>
+
+            <!-- קישור לתחילת תוכן העמוד -->
+            <a id="kishur-tohen" href="#map">קישור לתוכן</a>
+
+            <!-- תפריט ניווט ראשי -->
+
+            <nav id="tabs">
+                <ul>
+                    <li id="chema">
+                        <!-- זה לא עמוד, בהובר יפתח ריבוע עם כל הקישורים -->
+                        <a title="צמחי מרפא">צמחי מרפא</a>
+                        <ul>
+                            <li><a href="#" class="notActive" title="אבפורטיון ">אבפורטיון </a></li>
+                            <li><a href="#" class="notActive" title="ביטר">ביטר</a></li>
+                            <li><a href="benharchit.html" title="בן חרצית">בן חרצית</a></li>
+                            <li><a href="#" class="notActive" title="הדס">הדס</a></li>
+                            <li><a href="#" class="notActive" title="זעתר">זעתר</a></li>
+                            <li><a href="#" class="notActive" title="טימין">טימין</a></li>
+                            <li><a href="#" class="notActive" title="לואיזה">לואיזה</a></li>
+                            <li><a href="#" class="notActive" title="לובליה">לובליה</a></li>
+                            <li><a href="#" class="notActive" title="לבנדר">לבנדר</a></li>
+                            <li><a href="#" class="notActive" title="מליסה רפואית">מליסה רפואית</a></li>
+                            <li><a href="#" class="notActive" title="כצח גינה">כצח גינה</a></li>
+                            <li><a href="#" class="notActive" title="סימיסיפוגה">סימיסיפוגה</a></li>
+                            <li><a href="#" class="notActive" title="קאוה-קאוה">קאוה-קאוה</a></li>
+                            <li><a href="#" class="notActive" title="קממומיל \ בבונג">קממומיל \ בבונג</a></li>
+                        </ul>
+                    </li>
+                    <li id="problems">
+                        <!-- זה לא עמוד, בהובר יפתח תפריט של כאבים -->
+                        <a title="בעיות רפואיות"">בעיות רפואיות</a>
+                        <ul>
+                            <li><a href="rosh.html" title="כאבי ראש">כאבי ראש</a></li>
+                            <li><a href="#" class="notActive" title="כאבי גב">כאבי גב</a></li>
+                            <li><a href="#" class="notActive" title="בעיות במערכת העיכול">בעיות במערכת העיכול</a></li>
+                            <li><a href="#" class="notActive" title="בעיות במערכת הנשימה">בעיות במערכת הנשימה</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="myWeb.html" title="סגולות">סגולות</a></li>
+                    <li><a href="tipim.html" title="טיפים לגינון">טיפים לגינון</a></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
+        <h1 class="h-rashi" id="map">מפת האתר</h1>
+        <div>
+            <table border="1">
+                <tr>
+                    <th class="h-rashi">עמודים כלליים</th>
+                    <th class="h-rashi">אינדקס צמחי מרפא</th>
+                    <th class="h-rashi">בעיות רפואיות</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href="index.html" title="דף הבית">דף הבית</a></li>
+                            <li><a href="about.html" title="אודות">אודות</a></li>
+                            <li><a href="contactUs.html" title="צור קשר">צור קשר</a></li>
+                            <li><a href="myWeb.html" title="סגולות">סגולות</a></li>
+                            <li><a href="tipim.html" title="טיפים לגינון">טיפים לגינון</a></li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li><a class="notActive" href="#" title="אבפורטיון ">אבפורטיון </a></li>
+                            <li><a class="notActive" href="#" title="ביטר">ביטר</a></li>
+                            <li><a href="benharchit.html" title="בן חרצית">בן חרצית</a></li>
+                            <li><a class="notActive" href="#" title="הדס">הדס</a></li>
+                            <li><a class="notActive" href="#" title="זעתר">זעתר</a></li>
+                            <li><a class="notActive" href="#" title="טימין">טימין</a></li>
+                            <li><a class="notActive" href="#" title="לואיזה">לואיזה</a></li>
+                            <li><a class="notActive" href="#" title="לובליה">לובליה</a></li>
+                            <li><a class="notActive" href="#" title="לבנדר">לבנדר</a></li>
+                            <li><a class="notActive" href="#" title="מליסה רפואית">מליסה רפואית</a></li>
+                            <li><a class="notActive" href="#" title="כצח גינה">כצח גינה</a></li>
+                            <li><a class="notActive" href="#" title="סימיסיפוגה">סימיסיפוגה</a></li>
+                            <li><a class="notActive" href="#" title="קאוה-קאוה">קאוה-קאוה</a></li>
+                            <li><a class="notActive" href="#" title="קממומיל \ בבונג">קממומיל \ בבונג</a></li>
+                        </ul>
+                    </td>
+
+                    <td>
+                        <ul>
+                            <li><a href="rosh.html" title="כאבי ראש">כאבי ראש</a></li>
+                            <li><a class="notActive" href="#" title="כאבי גב">כאבי גב</a></li>
+                            <li><a class="notActive" href="#" title="בעיות במערכת העיקול">בעיות במערכת העיקול</a></li>
+                            <li><a class="notActive" href="#" title="בעיות במערכת הנשימה">בעיות במערכת הנשימה</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <footer>
+
+            <p> © כל הזכויות שמורות לסגולות הטבע</p>
+
+            <ul>
+                <li><a href="siteMap.html" title="מפת אתר">מפת אתר</a></li>
+                <li><a href="about.html" title="אודות">אודות</a></li>
+                <li><a href="contactUs.html" title="צור קשר">צור קשר</a></li>
+            </ul>
+
+
+        </footer>
+    </div>
+</body>
+</html>
+

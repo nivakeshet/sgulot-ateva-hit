@@ -1,0 +1,601 @@
+/*רקע אתר*/
+body {
+    direction: rtl;
+    background: #f9f9ef url('../imeges/aliim1.png') no-repeat top fixed;
+    background-size: 100%;
+}
+
+/*כל התוכן בקונטיינר*/
+#contaner {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*לוגו*/
+#logo {
+    height:220px;
+    width: 550px;
+    margin: auto;
+}
+
+#logoimg {
+    background: url(../imeges/logo.png) no-repeat center;
+    height: 200px;
+    background-size: 550px;
+}
+
+#logoimg .h-logo {
+    padding: 13px 15px 0px 0px;
+    color: #825BB4;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Heebo', sans-serif;
+    transition: all 0.7s;
+    }
+
+#logo a:hover{
+    text-decoration: none;
+}
+
+#logo:hover .h-logo {
+    color:#9360b4;
+    text-shadow: 1px 1px 1px #537A14;
+}
+
+
+#logoimg .p-logo {
+    padding: 10px 15px 0px 0px;
+    text-align: center;
+    color:#537A14;
+    font-family: 'Heebo', sans-serif;
+    line-height:20px;
+    font-size:16px;
+}
+
+.logoHref{
+    text-decoration: none;
+}
+
+#p-header{
+    text-align: center;
+    color:#825BB4;
+    font-family: 'Heebo', sans-serif;
+    font-size:23px;
+}
+
+
+/*תפריט ניווט ראשי */
+
+nav {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  display:inline-block; 
+}
+
+#tabs ul {
+    list-style: none;
+}
+
+#tabs ul li {
+    display: inline-block;
+    float: right;
+}
+
+#tabs ul li a {
+    display: block;
+    background-color: #AEBF3C;
+    color: #404040;
+    text-decoration: none;
+    text-align: center;
+    width: 240px;
+    height: 47px;
+    Padding-top: 13px;
+    font-size:20px;
+    font-family: 'Heebo', sans-serif;
+    transition: 0.4s ease;
+
+   -webkit-box-sizing: border-box; 
+   -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+ /*במעבר עכבר על התפריט*/
+#tabs li a:hover{
+    background-color:#e2dd54;
+    font-size:22px;
+    padding-top:12px;
+}
+ /*עמוד שנבחר בתפריט*/
+ #tabs ul li a.selected {
+    background-color: #e2dd54;
+    text-decoration: underline;
+    font-size:23px;
+    padding-top:12px;
+}
+/*תפריט כאבים*/
+#tabs ul li ul {
+    display: none;
+    position: absolute;
+    box-shadow: 3px 6px 10px 2px rgba(81, 81, 81, 0.33);
+    z-index:1;
+}
+#tabs ul li:hover ul {
+    display: block;
+    width: 240px;
+    z-index:1;
+}
+#tabs ul li:hover ul li a {
+    background-color: #AEBF3C;
+    z-index:1;
+}
+#tabs ul li:hover ul li a:hover {
+    background-color: #e2dd54;
+    z-index:1;
+}
+
+/*הגדרות לתפריט צמחים שנפתח
+*/
+#tabs ul li#chema ul {
+     width: 720px;
+     background-color: #AEBF3C;
+     box-shadow: 3px 6px 10px 2px rgba(81, 81, 81, 0.33);
+}
+#tabs ul li#chema ul li {
+     display: inline;
+}
+
+
+/*הגדרות לקרוסלה - דף בית*/
+
+#carousel-example-generic {
+    position:absolute;
+    height: 500px;
+    background-color: rgba(255, 246, 198, 0.80);
+    margin-top: 30px;
+    z-index:0;
+
+}
+
+
+.item h2{
+    color: #825BB4;
+    font-size:43px;
+    padding: 0px 0px 33px 0px;
+    font-family: 'Heebo', sans-serif;
+    text-align:right;
+    width:960px;
+}
+.item p{
+    color:  #404040;
+    font-size:20px;
+    font-family: 'Heebo', sans-serif;
+    text-align:right;
+    line-height: 52px; 
+    padding: 0px 0px 60px 0px;
+}
+
+.meidaNosaf{
+    background-color: rgba(189, 151, 236, 0.65);
+    border-radius:7px;
+    padding:5px 15px 5px 15px;
+    color:#404040;
+    font-size:22px;
+    font-family: 'Heebo', sans-serif;
+}
+.meidaNosaf:hover{
+    color:#404040;
+}
+
+
+
+/*דף בית - קוביית סגולות הצמחים*/
+
+#sgulot{
+    position:absolute;
+    display:inline-block;
+    background: url(../imeges/homeSgulot.png) no-repeat;
+    height:340px;
+    width:960px;
+    padding:100px 30px 0px 40px;
+    margin-top:550px;
+}
+#h2-sgulot{
+    color: #825BB4;
+    font-size:35px;
+    padding-right: 180px;
+    font-family: 'Heebo', sans-serif;
+    font-weight:bold;
+    margin-top:0px;
+}
+#sgulot p{
+    color: #404040;
+    font-size:20px;
+    line-height:50px;
+    padding: 10px 180px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+#sgulot:hover{
+    text-decoration:none;
+
+}
+
+
+/*כותרות ראשיות בעמודים */
+.h-rashi{
+    color:#825BB4;
+    font-size: 14pt;
+    font-family: 'Heebo', sans-serif;
+    margin:50px 0px 15px 0px;
+}
+
+/*כותרות משניות בעמודים*/
+h2{
+    color:#37520c;
+    font-size: 13pt;
+    font-family: 'Heebo', sans-serif;
+    margin:50px 0px 7px 0px;
+}
+
+/*כותרת תת משנית */
+ h3 , h4{
+    color:#825BB4;
+    font-size: 12pt;
+    font-family: 'Heebo', sans-serif;
+ }
+
+/*הצמדת התמונות לימין או לשמאל*/
+ .left{
+    float:left;
+}
+ .right{
+    float:right;
+}
+
+ /*מאפייני הטקסט בעמודים הפנימיים*/
+.text1{
+    margin:0px 0px 30px 430px;
+    line-height:29px;
+    text-align:justify;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    color: #404040;
+}
+.text1 p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    color: #404040;
+}
+strong{
+    color:#994CBF;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+}
+.article-ul li{
+    margin:0px 15px 0px 415px;
+    line-height:28px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    text-align:justify;
+    color: #404040;
+}
+
+/*מאפיינים לעמוד בן חרצית*/
+#halita{
+    margin-top:30px;
+}
+.careful{
+    color:#D91915;
+    font-size: 13pt;
+    font-family: 'Heebo', sans-serif;
+    margin:30px 0px 10px 0px;
+}
+#red{
+    border:solid #D91915 2px;
+    padding:0px 20px 0px 20px;
+}
+#shimushim li{
+    line-height:28px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    text-align:justify;
+    color: #404040;
+    margin:0px 15px 0px 15px;
+
+}
+
+
+/*עמוד בן חרצית - הגדרות לתמונות*/
+#hom{
+    padding:20px 170px 30px 140px;
+}
+#yad{
+    margin: 0px 100px 0px 100px;
+}
+#shen{
+    margin: 0px 200px 60px 150px;
+}
+#yetush{
+    margin:0px 200px 0px 160px;
+}
+#pregnancy{
+    margin:50px 0px 0px 100px;
+}
+#age2{
+    margin-left:125px;
+}
+#rehivim{
+    margin:90px 650px 0px 0px;
+    position:absolute;
+}
+
+/*מאפיינים לעמוד כאבי ראש*/
+#yes{
+    display:inline-block;
+    width:400px;  
+    height:300px; 
+    border:solid #537A14 2px;
+    padding:20px 35px 20px 0px;
+    list-style-image:url(../imeges/rosh/v.png);
+    border-radius:10px;
+}
+#no{
+    display:inline-block;
+    width:400px;   
+    height:300px; 
+    border:solid #D91915 2px;
+    padding:20px 35px 20px 0px;
+    margin-right: 75px;
+    position:absolute;
+    list-style-image:url(../imeges/rosh/x.png);
+    border-radius:10px;
+}
+.yes-no{
+    line-height:28px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    text-align:justify;
+    color: #404040;
+    margin-right:15px;
+}
+#mumlazim{
+    background-color:rgba(226, 221, 84, 0.50);
+    border-radius:20px;
+    padding:0px 50px 10px 0px;
+    margin-top:50px;
+}
+#mumlazim h2{
+    padding-top:13px;
+}
+#mumlazim a:hover{
+    color:blue;
+}
+
+/*הגדרות לתמונות -כאב ראש*/
+#rosh1{
+    margin-left:150px;
+}
+#man{
+    margin:0px 0px 20px 150px;
+}
+#tv , #phone{
+    margin:0px 0px 20px 50px;
+}
+#perot{
+    margin:20px 70px 0px 0px;
+}
+#ugiot{
+    margin-right: 70px;
+}
+#dam , #rosh2{
+    margin-left:120px;
+}
+#tea{
+    margin:11px 0px 0px 150px;
+}
+
+/*מאפיינים לעמוד טיפים לגינון */
+.tip{
+   background-color:rgba(226, 221, 84, 0.50);
+    border-radius:20px;
+    padding:0px 10px 10px 130px;
+    margin-top:60px;
+}
+.tip p{
+    line-height:28px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    text-align:justify;
+    color: #404040;
+    padding-left:35px;
+}
+.tip h2{
+    padding-top:15px;
+}
+#between-tipim{
+    margin-top:50px;
+}
+#zmahim a:hover{
+    color:blue;
+}
+/*הגדרות לתמונות - טיפים לגינון*/
+
+#tipot{
+    margin-top:20px;
+}
+
+#menora1 {
+    margin:30px 10px 0px 20px;
+}
+#menora2{
+    margin:15px 10px 0px 20px;
+}
+
+
+
+
+/*הגדרות לעמוד מפת אתר */
+
+
+table ul{
+   list-style-type:none
+}
+
+
+table ul li a {
+    display: block;
+    color: #404040;
+    text-decoration: none;
+    text-align: right;
+    height: 20px;
+    width:240px;
+    Padding-top: 13px;
+    font-size:20px;
+    font-family: 'Heebo', sans-serif;
+}
+table a:hover{
+    text-decoration:underline;
+    color:blue;
+}
+table th{
+    text-align: right;
+    background-color:rgba(174, 191, 60, 0.38);
+    padding:20px 50px 20px 50px;
+    box-shadow: 1px 1px 1px 1px rgba(81, 81, 81, 0.33);
+
+}
+table td{
+    background-color:rgba(255, 246, 198, 0.80);
+    box-shadow: 1px 1px 1px 1px rgba(81, 81, 81, 0.33);
+    padding:0px 50px 20px 0px;
+}
+table{
+    width:960px;
+    margin-bottom:50px;
+}
+
+
+/*הגדרות לעמוד מי אנחנו */
+.img-us {
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+#about figure{
+    margin:50px 200px 50px 0px;
+}
+ #about p, #about ul li , #about a{
+    line-height:28px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    text-align:justify;
+    color: #404040;
+ }
+ #about a:hover{
+    color:blue;
+ }
+ #about{
+         margin: 0px 100px 0px 100px;
+ }
+ #about section{
+     margin-bottom:40px;
+ }
+ #about #hit{
+     margin:50px 50px 0px 50px;
+ }
+ #hit p a{
+     margin-right:20px;
+ }
+
+/*עמוד צור קשר */
+#prat{
+     text-align:center;
+}
+#contact p{
+    display:block;
+    line-height:28px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 12pt;
+    color: #404040;
+    margin-right:70px;
+}
+
+input[type ='text'] , textarea, #Send {
+    display:block;
+    height:30px;
+    margin:5px auto;
+    margin-bottom:18px;
+}
+textarea{
+    height:70px;
+}
+
+form {
+    border:2px solid white;
+    border-radius:10px;
+    box-shadow:0 0 4px #AAA;
+    height:420px;
+    width:300px;
+    background-color:rgba(178, 131, 208, 0.56);
+    margin:10px auto;
+    padding:10px;
+    box-shadow: 3px 6px 10px 2px rgba(81, 81, 81, 0.33);
+}
+#Send:hover{
+    text-decoration:underline;
+    background-color:#AEBF3C ;
+}
+
+
+/*פוטר*/
+#footerHome{
+    margin-top:900px;
+}
+footer{
+    background-color:#AEBF3C;
+    width:960px;
+    height:60px;
+    bottom:0px;
+    margin-top:30px;
+}
+
+footer li, footer ul{
+    list-style: none;
+    display:inline-block;
+    padding:12px 150px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    font-size:18px;
+}
+footer ul{
+    padding-right:220px;
+}
+footer p {
+    display:inline-block;
+    position:absolute;
+    padding:24px 10px 0px 0px;
+    font-family: 'Heebo', sans-serif;
+    color: #404040;
+    font-size:18px;
+}
+footer a{
+    color: #404040;
+}
+footer li a:hover{
+    color:blue;
+}
+
+/*נגישות ---------*/
+
+#kishur-tohen{
+    color:#f9f9ef;
+}
+
+a:focus {
+    color:#0094ff;
+}
+
+/*קישורים לא פעילים*/
+.notActive{
+  cursor: not-allowed;
+}
